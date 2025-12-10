@@ -39,12 +39,12 @@ export default function Header() {
       {/* Info Area */}
       <div className="flex flex-col items-end gap-1 text-right">
         <div className="flex flex-col gap-0.5 opacity-70">
-          <span>LONDON, UK</span>
+          <span>SILICON VALLEY, USA</span>
           <span>{time}</span>
         </div>
 
         <div className="max-w-[200px] mt-2 opacity-50 hidden md:block">
-          PHANTOM IS A TECHNOLOGY-LED CREATIVE AGENCY CRAFTING EXPERIENCES FOR GLOBAL BRANDS.
+          WELCOME TO MY WORLD
         </div>
 
         <button className="mt-4 bg-white text-black px-6 py-3 rounded-full font-sans font-medium hover:scale-105 transition-transform">
