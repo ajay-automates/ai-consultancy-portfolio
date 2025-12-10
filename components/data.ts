@@ -89,7 +89,8 @@ export const projects = [
         tags: ['Intelligent routing', 'Knowledge base', 'Sentiment analysis'],
         description: '24/7 AI-powered customer support handling 80% of tickets automatically',
         image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2070&auto=format&fit=crop',
-        slug: 'support-chatbot'
+        slug: 'support-chatbot',
+        link: 'https://chat-bot-seven-puce.vercel.app/'
     },
     {
         id: 10,
