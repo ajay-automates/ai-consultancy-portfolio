@@ -7,7 +7,8 @@ export const projects = [
         tags: ['Personalized emails', 'AI follow-ups', 'Delivery tracking'],
         description: 'AI-powered email outreach system with personalization and CRM integration',
         image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=2070&auto=format&fit=crop',
-        slug: 'email-blast'
+        slug: 'email-blast',
+        link: 'https://email-blast.vercel.app/'
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ export const projects = [
         tags: ['Auto content generation', 'Smart scheduling', 'Engagement tracking'],
         description: 'Automates LinkedIn posts with smart scheduling and content generation',
         image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2174&auto=format&fit=crop',
-        slug: 'social-media-automator'
+        slug: 'social-media-automator',
+        link: 'https://socialmediaautomator.com/'
     },
     {
         id: 3,

@@ -19,6 +19,11 @@ export default function ProjectList() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.05 }}
                         className="group relative flex flex-col md:flex-row items-baseline py-8 border-b border-white/10 hover:border-white/40 transition-colors cursor-pointer"
+                        onClick={() => {
+                            if (project.link) {
+                                window.open(project.link, '_blank', 'noopener,noreferrer')
+                            }
+                        }}
                     >
                         {/* Year - Sticky logic would go here if needed, keeping simple for now */}
                         <div className="w-24 text-lg font-mono text-gray-500 group-hover:text-white transition-colors">
@@ -28,6 +33,7 @@ export default function ProjectList() {
                         {/* Title */}
                         <div className="flex-1 text-2xl md:text-3xl font-medium group-hover:translate-x-4 transition-transform duration-300">
                             {project.title}
+                            {project.link && <span className="ml-2 text-sm text-orange-500">→</span>}
                         </div>
 
                         {/* Tags */}

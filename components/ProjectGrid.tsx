@@ -170,6 +170,12 @@ function InfiniteCard({ slot, x, y }: any) {
         return 1 - (dist / 1200)
     })
 
+    const handleClick = () => {
+        if (slot.project.link) {
+            window.open(slot.project.link, '_blank', 'noopener,noreferrer')
+        }
+    }
+
     return (
         <motion.div
             style={{
@@ -185,7 +191,8 @@ function InfiniteCard({ slot, x, y }: any) {
                 // Important for proper 3D
                 transformOrigin: 'center center'
             }}
-            className="group rounded-md overflow-hidden bg-[#0A0A0A] border border-white/5 hover:border-white/40 transition-colors shadow-2xl"
+            className={`group rounded-md overflow-hidden bg-[#0A0A0A] border border-white/5 hover:border-white/40 transition-colors shadow-2xl ${slot.project.link ? 'cursor-pointer' : ''}`}
+            onClick={handleClick}
         >
             <div className="relative w-full h-full">
                 <img
@@ -202,6 +209,9 @@ function InfiniteCard({ slot, x, y }: any) {
                     <h3 className="text-sm font-bold leading-tight text-white line-clamp-2">
                         {slot.project.title}
                     </h3>
+                    {slot.project.link && (
+                        <span className="text-[8px] text-white/60 mt-1">Click to view →</span>
+                    )}
                 </div>
             </div>
         </motion.div>
