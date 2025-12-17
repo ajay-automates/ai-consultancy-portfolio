@@ -16,21 +16,23 @@ export default function WebsiteInquiry() {
         <main className="min-h-screen bg-[#050505] text-white selection:bg-white/30 selection:text-white font-sans">
             <Header />
 
-            <div className="pt-32 pb-20 px-6 md:px-12 max-w-5xl mx-auto">
+            <div className="pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
+                    className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
                 >
-                    <div className="mb-12 text-center md:text-left">
-                        <span className="text-orange-500 font-mono tracking-widest text-sm mb-4 block">CUSTOM WEBSITE INFRASTRUCTURE</span>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">Let's build your new platform.</h1>
-                        <p className="text-xl text-gray-400 font-light max-w-2xl">
-                            We don't just build websites. We build conversion-ready infrastructure that integrates with your entire automation stack.
-                        </p>
-                    </div>
+                    {/* Left Column - Content */}
+                    <div className="space-y-8">
+                        <div>
+                            <span className="text-orange-500 font-mono tracking-widest text-sm mb-4 block">15-MINUTE STRATEGY CALL</span>
+                            <h1 className="text-4xl md:text-6xl font-bold mb-6">Let's build your new platform.</h1>
+                            <p className="text-xl text-gray-400 font-light">
+                                We don't just build websites. We build conversion-ready infrastructure that integrates with your entire automation stack.
+                            </p>
+                        </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
                         <div className="p-8 bg-white/5 rounded-2xl border border-white/10">
                             <h3 className="text-xl font-bold mb-4">What we need to know</h3>
                             <p className="text-gray-400 mb-6">
@@ -52,18 +54,19 @@ export default function WebsiteInquiry() {
                             </ul>
                         </div>
 
-                        <div className="p-8 bg-white/5 rounded-2xl border border-white/10 flex flex-col justify-center">
+                        <div className="p-8 bg-white/5 rounded-2xl border border-white/10">
                             <h3 className="text-xl font-bold mb-2">Ready to scale?</h3>
                             <p className="text-gray-400">
-                                Schedule your strategy session below. We'll map out the architecture together.
+                                Schedule your strategy session on the right. We'll map out the architecture together.
                             </p>
                         </div>
                     </div>
 
+                    {/* Right Column - Calendly */}
                     {mounted && (
-                        <div className="w-full h-[700px] border border-white/10 rounded-2xl overflow-hidden bg-white/5">
+                        <div className="w-full h-[800px] lg:sticky lg:top-32 border border-white/10 rounded-2xl overflow-hidden bg-white/5">
                             <InlineWidget
-                                url="https://calendly.com/ajay-folderwave/30min"
+                                url="https://calendly.com/ajaykumarreddynelavetla/30min"
                                 styles={{ height: '100%', width: '100%' }}
                                 pageSettings={{
                                     backgroundColor: '111111',

@@ -46,10 +46,10 @@ export default function Header() {
         </div>
 
         <a
-          href="#contact"
+          href="/website-inquiry"
           className="mt-4 bg-white text-black px-6 py-3 rounded-full font-sans font-medium hover:scale-105 transition-transform"
         >
-          Book a Consultation
+          Book a 15-Min Call
         </a>
       </div>
     </header>

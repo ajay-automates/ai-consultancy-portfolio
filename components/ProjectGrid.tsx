@@ -171,9 +171,7 @@ function InfiniteCard({ slot, x, y }: any) {
     })
 
     const handleClick = () => {
-        if (slot.project.link) {
-            window.open(slot.project.link, '_blank', 'noopener,noreferrer')
-        }
+        window.location.href = '/website-inquiry'
     }
 
     return (
@@ -210,7 +208,7 @@ function InfiniteCard({ slot, x, y }: any) {
                         {slot.project.title}
                     </h3>
                     {slot.project.link && (
-                        <span className="text-[8px] text-white/60 mt-1">Click to view →</span>
+                        <span className="text-[8px] text-white/60 mt-1">Book a call →</span>
                     )}
                 </div>
             </div>

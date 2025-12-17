@@ -20,9 +20,7 @@ export default function ProjectList() {
                         transition={{ delay: index * 0.05 }}
                         className="group relative flex flex-col md:flex-row items-baseline py-8 border-b border-white/10 hover:border-white/40 transition-colors cursor-pointer"
                         onClick={() => {
-                            if (project.link) {
-                                window.open(project.link, '_blank', 'noopener,noreferrer')
-                            }
+                            window.location.href = '/website-inquiry'
                         }}
                     >
                         {/* Year - Sticky logic would go here if needed, keeping simple for now */}

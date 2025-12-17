@@ -34,8 +34,8 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-            <a href="#contact" className="group bg-white text-black px-8 py-4 rounded-full font-medium text-lg hover:scale-105 transition-transform flex items-center gap-2">
-              Book a Free Consultation
+            <a href="/website-inquiry" className="group bg-white text-black px-8 py-4 rounded-full font-medium text-lg hover:scale-105 transition-transform flex items-center gap-2">
+              Book a 15-Min Strategy Call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <p className="text-gray-500 text-sm font-mono">
@@ -124,13 +124,7 @@ export default function Home() {
                 transition={{ delay: i * 0.1 }}
                 className="group cursor-pointer"
                 onClick={() => {
-                  if (project.link) {
-                    if (project.link.startsWith('/')) {
-                      router.push(project.link)
-                    } else {
-                      window.open(project.link, '_blank')
-                    }
-                  }
+                  router.push('/website-inquiry')
                 }}
               >
                 <div className="relative aspect-video bg-gray-900 rounded-2xl overflow-hidden mb-6 border border-white/10 group-hover:border-white/30 transition-colors">
@@ -157,7 +151,7 @@ export default function Home() {
                   ))}
                 </div>
                 <span className="text-sm font-medium border-b border-orange-500/30 pb-0.5 text-orange-500/80 group-hover:border-orange-500 group-hover:text-orange-500 transition-all inline-block">
-                  View project
+                  Book a call to discuss
                 </span>
               </motion.div>
             ))}
