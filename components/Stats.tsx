@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const stats = [
     {
-        metric: '5+',
+        metric: '10+',
         label: 'AI Systems Built',
         description: 'Production-ready automations'
     },
