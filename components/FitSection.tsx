@@ -16,7 +16,7 @@ export default function FitSection() {
                     <span className="text-orange-500 font-mono tracking-widest text-sm mb-4 block">CLIENT FIT</span>
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">Is this for you?</h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                        We work with specific types of businesses. Here's who we're built for.
+                        We work with specific types of businesses. Here&apos;s who we&apos;re built for.
                     </p>
                 </motion.div>
 
@@ -67,15 +67,15 @@ export default function FitSection() {
                             {[
                                 'You want cheap tools',
                                 'You want courses or templates',
-                                'You're looking for DIY solutions',
-                            'You don't want custom work',
-                            'You need it done in 48 hours'
-              ].map((item, i) => (
-                            <li key={i} className="flex items-start gap-3">
-                                <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                                <span className="text-gray-300">{item}</span>
-                            </li>
-              ))}
+                                "You're looking for DIY solutions",
+                                "You don't want custom work",
+                                'You need it done in 48 hours'
+                            ].map((item, i) => (
+                                <li key={i} className="flex items-start gap-3">
+                                    <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                                    <span className="text-gray-300">{item}</span>
+                                </li>
+                            ))}
                         </ul>
                     </motion.div>
                 </div>
@@ -87,7 +87,7 @@ export default function FitSection() {
                     className="text-center mt-12"
                 >
                     <p className="text-gray-500 font-mono text-sm">
-                        This saves us both time. If you're a fit, let's talk.
+                        This saves us both time. If you&apos;re a fit, let&apos;s talk.
                     </p>
                 </motion.div>
             </div>

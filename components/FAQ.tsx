@@ -7,20 +7,20 @@ import { ChevronDown } from 'lucide-react'
 const faqs = [
     {
         question: 'How long does a typical project take?',
-        answer: 'Most automations are built and deployed in 2-4 weeks. Simple workflows can be done in 1 week. Complex multi-system integrations may take 4-6 weeks. We'll give you a clear timeline on the discovery call.'
-  },
+        answer: "Most automations are built and deployed in 2-4 weeks. Simple workflows can be done in 1 week. Complex multi-system integrations may take 4-6 weeks. We'll give you a clear timeline on the discovery call."
+    },
     {
         question: 'Do I need technical knowledge?',
-        answer: 'No. We handle all the technical work. You just need to explain your current workflow and desired outcome. We'll ask the right questions to understand your process and build the system for you.'
-  },
+        answer: "No. We handle all the technical work. You just need to explain your current workflow and desired outcome. We'll ask the right questions to understand your process and build the system for you."
+    },
     {
         question: 'What happens after I book a call?',
-        answer: 'We'll have a 15-minute strategy session to understand your biggest bottleneck.If it's a fit, we'll map out the automation, give you a timeline and quote, and start building.No pressure, no pitch.'
-  },
+        answer: "We'll have a 15-minute strategy session to understand your biggest bottleneck. If it's a fit, we'll map out the automation, give you a timeline and quote, and start building. No pressure, no pitch."
+    },
     {
         question: 'Can you integrate with my existing tools?',
-        answer: 'Yes. We work with most common tools (CRMs, email platforms, databases, APIs). If it has an API or webhook, we can connect it. We'll confirm compatibility on the discovery call.'
-  },
+        answer: "Yes. We work with most common tools (CRMs, email platforms, databases, APIs). If it has an API or webhook, we can connect it. We'll confirm compatibility on the discovery call."
+    },
     {
         question: 'What if the automation breaks?',
         answer: 'We build production-grade systems with error handling and monitoring. If something breaks, we fix it. Most clients also opt for a monthly maintenance plan for ongoing support and updates.'
@@ -86,7 +86,7 @@ export default function FAQ() {
                         href="/website-inquiry"
                         className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-400 font-medium transition-colors"
                     >
-                        Book a call and we'll answer them →
+                        Book a call and we&apos;ll answer them →
                     </a>
                 </motion.div>
             </div>
