@@ -1,6 +1,10 @@
 'use client'
 
 import Header from '@/components/Header'
+import Stats from '@/components/Stats'
+import Testimonials from '@/components/Testimonials'
+import FitSection from '@/components/FitSection'
+import FAQ from '@/components/FAQ'
 import { projects } from '@/components/data'
 import { motion } from 'framer-motion'
 import { ArrowRight, Check, Cpu, Globe, MessageSquare, Zap, Terminal, Code, Database, Mail, MapPin, Phone } from 'lucide-react'
@@ -45,6 +49,9 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* STATS / METRICS */}
+      <Stats />
+
       {/* WHAT WE DO */}
       <section id="services" className="py-24 px-6 md:px-12 border-t border-white/10">
         <div className="max-w-7xl mx-auto">
@@ -57,33 +64,33 @@ export default function Home() {
             {[
               {
                 icon: Zap,
-                title: 'Automate Repetitive Workflows',
-                desc: 'Stop wasting hours on manual data entry and repetitive tasks.'
+                title: 'AI-Powered Email Outreach',
+                desc: 'Automated personalized outreach with AI research and follow-ups. Save 10-15 hrs/week.'
               },
               {
                 icon: Cpu,
-                title: 'Build Internal AI Tools',
-                desc: 'Custom dashboards and tools powered by your specialized data.'
+                title: 'Internal Ops Automation',
+                desc: 'Custom workflows for data entry, lead qualification, and reporting. Eliminate manual work.'
               },
               {
                 icon: Globe,
-                title: 'Integrate AI Systems',
-                desc: 'Seamlessly connect AI into your existing tech stack and workflows.'
+                title: 'Custom System Integrations',
+                desc: 'Connect your CRM, email platform, and tools into one automated workflow.'
               },
               {
                 icon: Check,
-                title: 'Replace Manual Ops',
-                desc: 'Transform slow manual operations into instant automated processes.'
+                title: 'Lead Qualification Systems',
+                desc: 'AI-powered lead scoring and routing. Focus your team on high-value prospects only.'
               },
               {
                 icon: MessageSquare,
-                title: 'Scale Without Headcount',
-                desc: 'Grow your capacity 10x without needing to hire more staff.'
+                title: 'Support Automation',
+                desc: 'Custom chatbots and AI agents trained on your data to handle common questions.'
               },
               {
                 icon: ArrowRight,
                 title: 'Production-Ready Systems',
-                desc: 'Every solution is custom built and deployed to production standards.'
+                desc: 'Every solution is custom built, tested, and deployed to production standards.'
               }
             ].map((item, i) => (
               <motion.div
@@ -165,6 +172,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TESTIMONIALS */}
+      <Testimonials />
+
       {/* HOW ENGAGEMENTS WORK */}
       <section className="py-32 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
@@ -180,28 +190,28 @@ export default function Home() {
             <div className="flex flex-col gap-12">
               {[
                 {
-                  step: '01',
-                  title: 'Discovery & audit',
-                  desc: 'We study your workflows, tools, and bottlenecks to find the highest-value opportunities.'
+                  step: 'Week 1',
+                  title: 'Discovery & Design',
+                  desc: 'We study your workflows, tools, and bottlenecks to find the highest-value opportunities and design the solution.'
                 },
                 {
-                  step: '02',
-                  title: 'System design',
-                  desc: 'We architect an AI solution tailored to your operation, not a generic template.'
+                  step: 'Week 2-3',
+                  title: 'Build & Deployment',
+                  desc: 'We implement, test, and ship production-ready systems that integrate with your stack. You get regular updates.'
                 },
                 {
-                  step: '03',
-                  title: 'Build & deployment',
-                  desc: 'We implement, test, and ship production-ready systems that integrate with your stack.'
+                  step: 'Week 4',
+                  title: 'Iterate & Optimize',
+                  desc: 'We monitor the live system, gather data, and make improvements based on real-world performance.'
                 },
                 {
-                  step: '04',
-                  title: 'Iteration & scale',
-                  desc: 'We utilize data from the live system to improve performance and expand capabilities.'
+                  step: 'Ongoing',
+                  title: 'Support & Scale',
+                  desc: 'Optional maintenance plans for ongoing support, updates, and expanding automation capabilities.'
                 }
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
-                  <span className="font-mono text-xl text-orange-500/50 mt-1">{step.step}</span>
+                  <span className="font-mono text-lg text-orange-500 mt-1 min-w-[80px]">{step.step}</span>
                   <div>
                     <h3 className="text-2xl font-bold mb-2">{step.title}</h3>
                     <p className="text-gray-400 leading-relaxed">{step.desc}</p>
@@ -257,6 +267,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* WHO THIS IS FOR / NOT FOR */}
+      <FitSection />
+
+      {/* FAQ */}
+      <FAQ />
 
       {/* FINAL CTA & CONTACT FORM */}
       <section id="contact" className="py-32 px-6 md:px-12 relative overflow-hidden">

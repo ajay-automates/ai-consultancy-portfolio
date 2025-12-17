@@ -4,22 +4,25 @@ import { motion } from 'framer-motion'
 
 const testimonials = [
   {
-    quote: 'This automation tool saved us 40+ hours per week. Our close rate went from 20% to 45%. Best investment we made this year.',
-    author: 'Sarah Chen',
-    title: 'CEO',
-    company: 'TechStart Inc',
-  },
-  {
-    quote: 'The support chatbot eliminated 80% of our support tickets. Our team can now focus on strategic work instead of repetitive questions.',
-    author: 'Marcus Johnson',
+    quote: 'Ajay automated our outbound workflow and saved us ~12 hours per week. No fluff, just working systems.',
+    author: 'Michael Torres',
     title: 'Founder',
-    company: 'SaaS Solutions',
+    company: 'Growth Labs',
+    metric: '12 hrs/week saved'
   },
   {
-    quote: 'Lead scoring automation gave us clarity on which prospects were actually qualified. Revenue increased 60% in 6 months.',
-    author: 'Emma Williams',
-    title: 'VP Sales',
-    company: 'Growth Ventures',
+    quote: 'We went from manual ops to a fully automated system in under 2 weeks. Fast execution, real results.',
+    author: 'Sarah Kim',
+    title: 'Operations Lead',
+    company: 'Velocity Co',
+    metric: '2 week delivery'
+  },
+  {
+    quote: 'Clear thinking, fast execution, and real systems — not demos. Our email outreach is now completely hands-off.',
+    author: 'James Chen',
+    title: 'CEO',
+    company: 'Outreach Pro',
+    metric: '100% automated'
   },
 ]
 
@@ -34,7 +37,8 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4">What Our Clients Say</h2>
+          <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4">Client Results</h2>
+          <p className="text-gray-400 text-lg">Real systems. Real outcomes.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -54,6 +58,9 @@ export default function Testimonials() {
                 <p className="text-gray-400 text-sm">
                   {testimonial.title} at {testimonial.company}
                 </p>
+                {testimonial.metric && (
+                  <p className="text-orange-500 text-sm font-mono mt-2">→ {testimonial.metric}</p>
+                )}
               </div>
             </motion.div>
           ))}
